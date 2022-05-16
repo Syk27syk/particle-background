@@ -44,7 +44,7 @@ header {
 
 .logo > h1 {
     text-align: center;
-    color: #FF2D6A;
+    color: #D8D8D8;
     padding: 35px;
     font-size: 16px;
 }
@@ -61,7 +61,7 @@ header {
     padding: 10px 15px;
     margin: 0 15px;
     font-size: 18px;
-    color: #FF2D6A;
+    color: #D8D8D8;
     transition: .3s;
     border-radius: 5px;
     position: relative;
@@ -71,7 +71,7 @@ header {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #FF2D6A;
+    background-color: #D8D8D8;
     position: absolute;
     transform-origin: center;
     left: 0%;

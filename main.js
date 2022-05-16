@@ -38,7 +38,7 @@ function runMatter() {
       width: dimensions.width,
       height: dimensions.height,
       wireframes: false,
-      background: 'rgb(240,240,240)' } });
+      background: 'rgb(0,0,0)' } });
 
 
 
@@ -90,49 +90,51 @@ function runMatter() {
     s,
 
     {
+      //cream polygons
       mass: s / 80,
       friction: 0,
       frictionAir: 0.02,
       angle: Math.round(Math.random() * 360),
       render: {
-        fillStyle: '#FFFFFF',
+        fillStyle: '#E4C660',
         strokeStyle: `#DDDDDD`,
         lineWidth: 2 } });
 
     World.add(world, body);
 
     let r = Common.random(0, 4);
+    //red
     var circle = Bodies.circle(x, y, Common.random(2, 8), {
       mass: 0.1,
       friction: 0,
       frictionAir: 0.01,
       render: {
-        fillStyle: r > 0.3 ? `#FF2D6A` : `rgb(240,240,240)`,
-        strokeStyle: `#E9202E`,
+        fillStyle: r > 0.3 ? `#FF0000` : `rgb(240,240,240)`,
+        strokeStyle: `#FF0000`,
         lineWidth: 2 } });
 
 
     World.add(world, circle);
-
+    //blue circles
     var circle = Bodies.circle(x, y, Common.random(2, 20), {
       mass: 6,
       friction: 0,
       frictionAir: 0,
       render: {
-        fillStyle: r > 0.3 ? `#4267F8` : `rgb(240,240,240)`,
-        strokeStyle: `#3257E8`,
+        fillStyle: r > 0.3 ? `#0917A8` : `rgb(240,240,240)`,
+        strokeStyle: `#0917A8`,
         lineWidth: 4 } });
 
 
     World.add(world, circle);
-
+    //blue rings
     var circle = Bodies.circle(x, y, Common.random(2, 30), {
       mass: 0.2,
       friction: 0.6,
       frictionAir: 0.8,
       render: {
         fillStyle: `rgb(240,240,240)`,
-        strokeStyle: `#FFFFFF`,
+        strokeStyle: `#3D0C02`,
         lineWidth: 3 } });
 
     World.add(world, circle);
